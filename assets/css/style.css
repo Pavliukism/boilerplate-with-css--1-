@@ -1,0 +1,368 @@
+@font-face {
+  font-family: "Ladna""Turist";
+  /* font-family: "Riccione" */
+  src: url("fonts/Ladna-Regular.woff2");
+  /* src: url("Riccione-Light.") */
+}
+
+@font-face {
+  font-family: "LadnaM";
+  /* font-family: "Riccione" */
+  src: url("/fonts/Ladna-Medium.woff2");
+  /* src: url("Riccione-Light.") */
+}
+
+:root {
+  --space: 0rem;
+  /* --space-s: 1rem; */
+}
+
+.figure-container {
+  width: 50vw;
+  /* Each figure container takes up 50% of the viewport width */
+  float: left;
+  margin-right: 0;
+  /* Ensure containers are positioned side by side */
+}
+
+
+
+
+.figure-container img {
+  max-width: 100%;
+  /* Ensure images don't exceed their container */
+  /* height: auto; */
+  align-items: center;
+  /* Maintain aspect ratio */
+}
+
+body {
+  font-size: 1rem;
+  font-family: "LadnaM";
+  line-height: 1.3rem;
+  text-align: left;
+  letter-spacing: -0.02rem;
+  color: rgb(0, 0, 0);
+  background-color: whitesmoke;
+}
+
+footnote {
+  color: rgb(0, 0, 0);
+  text-align: justify;
+  font-size: 0.8rem;
+  /* margin-top: 7rem; */
+  line-height: 1rem;
+  letter-spacing: -0.1px;
+  font-family: turist;
+  display: block;
+}
+
+.reference-toggle {
+  cursor: pointer;
+  /* color: orangered; */
+  background-color: orangered;
+  font-family: ladna;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  margin-left: 0.3rem;
+  font-size: 1.2rem;
+}
+
+.reference {
+  /* color:#1c75bc; */
+  overflow: hidden;
+  max-width: 0;
+  max-height: 0;
+  opacity: 0;
+  font-weight: bold;
+  font-family: ladna;
+  transition: max-width 0.2s ease;
+  color: black;
+  text-align: center;
+  /* Ensures the reference doesn't wrap to the next line */
+  display: inline-flex;
+  /* Use inline-block to allow transitions */
+}
+
+.reference.active {
+  background-color: rgb(183, 241, 74);
+  /* color: whitesmoke; */
+  color: black width: 100%;
+  font-size: 0.9rem;
+  letter-spacing: 0px;
+  /* text-align: justify; */
+  /* overflow: auto; */
+  /* border-radius: 1vh; */
+  word-break: break-word;
+  line-height: 125%;
+  hyphens: auto;
+  padding-top: 0.5vh;
+  padding-left: 1vh;
+  padding-right: 1vh;
+  padding-bottom: 0.5vh;
+  max-width: 100%;
+  /* Adjust as needed */
+  max-height: 100%;
+  /* Adjust as needed */
+  opacity: 1;
+  /* font-style: italic; */
+}
+
+.page-wrapper {
+  position: flex;
+  top: 0;
+  z-index: 10;
+  background-color: whitesmoke
+}
+
+main: :not(h2) {
+  margin-left: 50vw;
+  padding: 1 var(--space-s);
+  /* overflow-y: hidden;
+  overflow-x: hidden; */
+  background-color: whitesmoke;
+  position: flex;
+
+}
+
+p {
+  padding-left: 50vw;
+  padding-top: -2rem;
+}
+
+.header {
+  height: 97vh;
+  background-image: url('assets/images/background.png');
+  background-size: cover;
+  background-position: center;
+  color: whitesmoke
+    /* Add other styles as needed */
+}
+
+
+
+nav {
+  position: sticky;
+  top: 0;
+  width: 100vw;
+  left: 0;
+  display: flex;
+  background-color: rgb(183, 241, 74);
+  padding-left: 1vh;
+  justify-content: space-around;
+  padding: 5px;
+  flex-wrap: wrap;
+  font-size: 1.5PX;
+  color: black;
+  z-index: 1;
+  /* box-shadow: 0 -90px 100px 140px rgb(183, 241, 74); */
+
+}
+
+nav>div {
+  text-align: center;
+  font-size: 14px;
+  letter-spacing: normal;
+  line-height: 20px;
+  font-family: ladna;
+  font-weight: bold;
+  letter-spacing: -0.3px;
+}
+
+h1 {
+  position: absolute;
+  top: 0;
+  mix-blend-mode: exclusion;
+  left: 0;
+  text-align: center;
+  text-shadow: rgb(58, 22, 218) 1px 0 20px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  font-size: 16vw;
+  letter-spacing: -0.04em;
+  /* box-shadow: 0 0px 100px 140px rgb(183, 241, 74); */
+  line-height: 13.5vw;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  padding-top: 1vw;
+  background-image: url('images/background.png');
+  /* Specify the path to your image */
+  background-size: cover;
+  /* Ensure the image covers the entire h1 element */
+  background-position: center;
+  /* Center the image */
+  color: rgb(58, 22, 218);
+  /* Text color */
+  z-index: 100;
+}
+
+
+h2 {
+  font-size: 1.8vw;
+  letter-spacing: -0.03em;
+  font-family: ladna;
+  /* margin-bottom: -1.9rem; */
+  padding-top: 10vw;
+  font-weight: bold;
+  padding-left: 1rem;
+  margin-bottom: -23px;
+}
+
+#intro {
+  padding-top: 2vw;
+}
+
+
+h3 {
+  text-align: left;
+  font-size: 1.5vw;
+  font-weight: bold;
+  margin-bottom: -1.5rem;
+  font-family: ladna;
+  padding-left: 1rem;
+  padding-top: 10vw;
+}
+
+h4 {
+  text-align: center;
+  font-size: 12px;
+  font-weight: bold;
+  /* margin-bottom: -1.5rem; */
+  font-family: ladna;
+  padding-top: 2px;
+  color: whitesmoke;
+  mix-blend-mode: exclusion;
+}
+
+h5 {
+  text-align: center;
+  font-size: 4rem;
+  font-weight: bold;
+  line-height: 3.6rem;
+  margin-bottom: -2rem;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  padding-top: 50px;
+
+  letter-spacing: px;
+
+
+}
+
+h6 {
+  text-align: center;
+  font-size: 12px;
+  font-weight: bold;
+  margin-top: -2rem;
+  font-family: ladna;
+  color: black
+}
+
+p {
+  padding-right: 1rem;
+}
+
+.bg {
+  /* width: 100%; */
+  height: 97vh;
+  overflow: hidden;
+  z-index: 300;
+  position: absolute;
+  /* overflow-x: auto; */
+  /* display: webkit-inline-flex; */
+}
+
+.bg img {
+  position: absolute;
+  min width: 100vw;
+  min width: 100vh;
+  object-fit: cover;
+
+}
+
+figure {
+  padding: 1rem;
+  overflow: auto;
+}
+
+/* figure:not(:first-of-type) {
+  transform: translateY(-50%);
+} */
+
+figure img {
+  padding-bottom: 4px;
+  align-content: center
+    /* height: auto; */
+    display: inline-block;
+  /* padding-right: 51vw; */
+  /* object-fit: cover; */
+  width: 100%;
+  /* padding-right: 50vw; */
+}
+
+p {
+  text-indent: 5rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-right: ;
+}
+
+p.first {
+  text-indent: 0rem;
+
+}
+
+p.bib {
+  text-indent: 0rem;
+  ali
+}
+
+p.quote {
+  color: grey;
+  font-weight: bold;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  font-size: 1rem;
+  line-height: 125%;
+  letter-spacing: 0px;
+  font-family: ladna;
+  padding-right: 1rem;
+  text-align: left;
+  padding-left: 30vw;
+  text-indent: 0;
+
+
+
+}
+
+main>p:first-child {
+  text-indent: 0rem;
+}
+
+
+figcaption {
+  color: rgb(0, 0, 0);
+  text-align: justify;
+  line-height: 13px;
+  font-size: 12px;
+  margin-top: 0.1rem;
+  letter-spacing: -0.1px;
+  font-family: Ladna;
+  /* padding-left: 1rem; */
+  padding-right: 1rem;
+  font-weight: bold;
+  margin-right: vw;
+}
+
+p.epilogue {
+  color: rgb(0, 0, 0);
+  text-align: justify;
+  line-height: 13px;
+  font-size: 12px;
+  margin-top: 0.1rem;
+  letter-spacing: -0.1px;
+  font-family: Ladna;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-weight: bold;
+  margin-right: 51vw;
+}
