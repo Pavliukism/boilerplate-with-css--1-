@@ -154,7 +154,7 @@ nav {
   flex-wrap: wrap;
   font-size: 1.5PX;
   color: black;
-  z-index: 1;
+  z-index: 10;
   /* box-shadow: 0 -90px 100px 140px rgb(183, 241, 74); */
 
 }
@@ -273,8 +273,8 @@ p {
 
 .bg img {
   position: absolute;
-  min width: 100vw;
-  min width: 100vh;
+  min-width: 100%;
+  min-height: 100%;
   object-fit: cover;
 
 }
@@ -290,9 +290,8 @@ figure {
 
 figure img {
   padding-bottom: 4px;
-  align-content: center
-    /* height: auto; */
-    display: inline-block;
+  /* height: auto; */
+  display: inline-block;
   /* padding-right: 51vw; */
   /* object-fit: cover; */
   width: 100%;
@@ -329,9 +328,6 @@ p.quote {
   text-align: left;
   padding-left: 30vw;
   text-indent: 0;
-
-
-
 }
 
 main>p:first-child {
