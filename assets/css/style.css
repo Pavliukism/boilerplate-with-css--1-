@@ -87,7 +87,7 @@ footnote {
 .reference.active {
   background-color: rgb(183, 241, 74);
   /* color: whitesmoke; */
-  color: black ;
+  color: black;
   width: 100%;
   font-size: 0.9rem;
   letter-spacing: 0px;
@@ -116,7 +116,7 @@ footnote {
   background-color: whitesmoke
 }
 
-main: :not(h2) { 
+main: :not(h2) {
   margin-left: 50vw;
   padding: 1 var(--space-s);
   /* overflow-y: hidden;
@@ -137,8 +137,8 @@ p {
   background-size: cover;
   background-position: center;
   color: whitesmoke;
-    /* Add other styles as needed */
-  
+  /* Add other styles as needed */
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -160,7 +160,7 @@ nav {
   font-size: 1.5PX;
   color: black;
   z-index: 1;
-  /* box-shadow: 0 -90px 100px 140px rgb(183, 241, 74); */
+  /* box-shadow: 0 0px 50px 50px rgb(183, 241, 74); */
 
 }
 
@@ -175,13 +175,13 @@ nav>div {
 }
 
 h1 {
-/*   position: absolute;
+  /*   position: absolute;
   top: 0;
   left: 0; */
   mix-blend-mode: exclusion;
   text-align: center;
   text-shadow: rgb(58, 22, 218) 1px 0 20px;
-/*   width: 100%;
+  /*   width: 100%;
   height: 100%; */
   display: flex;
   font-size: 16vw;
@@ -200,6 +200,7 @@ h1 {
   /* Text color */
   z-index: 100;
 }
+
 
 
 h2 {
@@ -235,7 +236,7 @@ h4 {
   /* margin-bottom: -1.5rem; */
   font-family: ladna;
   padding-top: 2px;
-  color: whitesmoke;
+  color: rgb(255, 255, 255);
   mix-blend-mode: exclusion;
 }
 
@@ -267,13 +268,10 @@ p {
 }
 
 .bg {
-  /* width: 100%; */
   height: 97vh;
   overflow: hidden;
   z-index: 300;
   position: absolute;
-  /* overflow-x: auto; */
-  /* display: webkit-inline-flex; */
 }
 
 .bg img {
@@ -295,9 +293,9 @@ figure {
 
 figure img {
   padding-bottom: 4px;
-  align-content: center
-    /* height: auto; */
-    display: inline-block;
+  /* height: auto; */
+  padding-right: 50vw;
+  display: inline-block;
   /* padding-right: 51vw; */
   /* object-fit: cover; */
   width: 100%;
@@ -308,7 +306,6 @@ p {
   text-indent: 5rem;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
-  padding-right: ;
 }
 
 p.first {
